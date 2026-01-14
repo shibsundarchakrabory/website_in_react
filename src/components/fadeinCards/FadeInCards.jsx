@@ -1,31 +1,49 @@
-import React, { useEffect, useRef } from 'react';
-import styles from './FadeInCards.module.css';
-import reactImage from '../../assets/react.png'; // Example image
-import QRCodeGenerator from '../../assets/QR_Code_Generator.png'; // Example image
-import LIGHAR_TECH from '../../assets/LIGHAR_TECH.png'; // Example image
-import calculator from '../../assets/calculator.png'; // Example image
+import React, { useEffect, useRef } from "react";
+import styles from "./FadeInCards.module.css";
+import reactImage from "../../assets/react.png"; // Example image
+import QRCodeGenerator from "../../assets/QR_Code_Generator.png"; // Example image
+import LIGHAR_TECH from "../../assets/LIGHAR_TECH.png"; // Example image
+import calculator from "../../assets/calculator.png"; // Example image
+import snakeGame from "../../assets/SNAHE_GAME.png"; // Example image
 
 const creations = [
   {
     id: 1,
-    title: 'CALCULATOR',
-    description: 'its a calculator.',
+    title: "CALCULATOR",
+    description: "its a calculator.",
     image: calculator,
-    link: 'https://shibsundarchakrabory.github.io/CALCULATOR/',
+    link: "https://shibsundarchakrabory.github.io/CALCULATOR/",
   },
+
   {
     id: 2,
-    title: 'LIGHAR-TECH',
-    description: 'A Company i site i created.',
-    image: LIGHAR_TECH,
-    link: 'https://lighartech00.github.io/LIGHAR-TECH/',
+    title: "SNAKE GAME",
+    description: "a Snake game i created using javascript.",
+    image: snakeGame,
+    link: "https://shibsundarchakrabory.github.io/LOGIC_BUILDING_PROJECT_1/",
   },
   {
     id: 3,
-    title: 'RTTS',
-    description: 'A text to speach software.' ,
+    title: " QR Code Generator",
+    description:
+      "You enter the data select the cr code colors press enter and done.",
+    image: QRCodeGenerator,
+    link: "https://shibsundarchakrabory.github.io/qr_Code_genarator/",
+  },
+
+  {
+    id: 4,
+    title: "LIGHAR-TECH",
+    description: "A Company i site i created.",
+    image: LIGHAR_TECH,
+    link: "https://lighartech00.github.io/LIGHAR-TECH/",
+  },
+  {
+    id: 5,
+    title: "RTTS",
+    description: "A text to speach software.",
     image: reactImage,
-    link: '#',
+    link: "#",
   },
   // {
   //   id: 4,
@@ -41,13 +59,6 @@ const creations = [
   //   image: reactImage,
   //   link: '#',
   // },
-  {
-    id: 6,
-    title: ' QR Code Generator',
-    description: 'You enter the data select the cr code colors press enter and done.',
-    image: QRCodeGenerator,
-    link: 'https://shibsundarchakrabory.github.io/qr_Code_genarator/',
-  },
 ];
 
 function FadeInCards() {
@@ -93,11 +104,20 @@ function FadeInCards() {
             className={styles.card}
             ref={(el) => (cardsRef.current[index] = el)}
           >
-            <img src={creation.image} alt={creation.title} className={styles.cardImage} />
+            <img
+              src={creation.image}
+              alt={creation.title}
+              className={styles.cardImage}
+            />
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{creation.title}</h3>
               <p className={styles.cardDescription}>{creation.description}</p>
-              <a href={creation.link} className={styles.cardLink} target="_blank" rel="noopener noreferrer">
+              <a
+                href={creation.link}
+                className={styles.cardLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View Project
               </a>
             </div>
@@ -109,4 +129,3 @@ function FadeInCards() {
 }
 
 export default FadeInCards;
-
