@@ -5,6 +5,7 @@ import QRCodeGenerator from "../../assets/QR_Code_Generator.png"; // Example ima
 import LIGHAR_TECH from "../../assets/LIGHAR_TECH.png"; // Example image
 import calculator from "../../assets/calculator.png"; // Example image
 import snakeGame from "../../assets/SNAHE_GAME.png"; // Example image
+import kanbenLogo from "../../assets/kanbenLogo.png"; // Example image
 
 const creations = [
   {
@@ -30,35 +31,29 @@ const creations = [
     image: QRCodeGenerator,
     link: "https://shibsundarchakrabory.github.io/qr_Code_genarator/",
   },
-
   {
     id: 4,
+    title: "kenben Board",
+    description: "A kanben board i created using html css and javascript.",
+    image: kanbenLogo,
+    link: "https://shibsundarchakrabory.github.io/LOGIC_BUILDING_PROJECT_2/",
+  },
+
+  {
+    id: 5,
     title: "LIGHAR-TECH",
     description: "A Company i site i created.",
     image: LIGHAR_TECH,
     link: "https://lighartech00.github.io/LIGHAR-TECH/",
   },
   {
-    id: 5,
+    id: 6,
     title: "RTTS",
     description: "A text to speach software.",
     image: reactImage,
     link: "#",
   },
-  // {
-  //   id: 4,
-  //   title: 'Project Four',
-  //   description: 'A brief description of Project Four. It is a data science project using Python.',
-  //   image: reactImage,
-  //   link: '#',
-  // },
-  // {
-  //   id: 5,
-  //   title: 'Project Five',
-  //   description: 'A brief description of Project Five. It is a machine learning model deployment.',
-  //   image: reactImage,
-  //   link: '#',
-  // },
+  
 ];
 
 function FadeInCards() {
